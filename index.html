@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEEL TARAS GROUP | UNDER CONSTRUCTION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="scanlines"></div>
+    <div id="vignette"></div>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="glitch-text">NEEL TARAS GROUP...</div>
+            <div class="bar-container"><div class="bar-fill"></div></div>
+        </div>
+    </div>
+
+    <div id="world">
+        
+        <nav class="hud-nav">
+            <div class="brand">NEEL TARAS <span class="highlight">GROUP</span></div>
+            <ul id="nav-links">
+                <li onclick="scrollToSection('hero')">Home</li>
+                <li onclick="scrollToSection('about')">Skill Sets</li>
+                <li onclick="scrollToSection('contact')">Contact</li>
+            </ul>
+        </nav>
+
+        <section id="hero" class="active-section">
+            
+            <div class="celestial-body moon"></div>
+
+            <div class="celestial-body sun"></div>
+
+            <div class="launch-pad-container">
+                
+                <div class="missile-assembly">
+                    <div class="warhead"></div>
+                    
+                    <div class="missile-body">
+                        <div class="missile-text">UNDER CONSTRUCTION</div>
+                        <div class="panel-lines"></div>
+                    </div>
+                    
+                    <div class="fin left-fin"></div>
+                    <div class="fin right-fin"></div>
+                    <div class="thruster-nozzle"></div>
+                    
+                    <div class="fire-exhaust">
+                        <div class="flame red"></div>
+                        <div class="flame orange"></div>
+                        <div class="flame yellow"></div>
+                        <div class="smoke"></div>
+                    </div>
+                </div>
+
+                <div class="launch-status">
+                    <div class="simple-countdown">
+                        <div class="timer-flex">
+                            <div class="time-box"><span id="cd-days">00</span><label>D</label></div>
+                            <div class="sep">:</div>
+                            <div class="time-box"><span id="cd-hours">00</span><label>H</label></div>
+                            <div class="sep">:</div>
+                            <div class="time-box"><span id="cd-minutes">00</span><label>M</label></div>
+                            <div class="sep">:</div>
+                            <div class="time-box"><span id="cd-seconds">00</span><label>S</label></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="glass-panel">
+                <div class="panel-header"><h3>SKILLS</h3></div>
+                <div class="panel-body">
+                    
+                    <div class="skill-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="contact">
+            <div class="uplink-terminal">
+                <div class="screen-header">Get in touch</div>
+                <form onsubmit="event.preventDefault(); sendData();">
+                    <input type="text" placeholder="NAME" required>
+                    <input type="email" placeholder="YOUR EMAIL" required>
+                    <textarea placeholder="CONCERN" required></textarea>
+                    <button onclick="alert('Thanks')" class="cy-btn">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="hud-footer">
+        <div class="footer-content">
+            <span class="copyright">&copy; 2026 NEEL TARAS GROUP</span>
+            <span class="separator">|</span>
+            <a href="mailto:admin@neeltarasgroup.online" class="email-link">ADMIN@NEELTARASGROUP.ONLINE</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
