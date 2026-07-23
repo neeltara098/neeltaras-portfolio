@@ -3,114 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEEL TARAS GROUP | UNDER CONSTRUCTION</title>
+    <title>NTDG - Neel Taras Development Group</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://pl28475343.effectivegatecpm.com/1c/9b/d6/1c9bd69889bb729b9d86db0381e498ba.js"></script>
 </head>
 <body>
 
-    <div id="scanlines"></div>
-    <div id="vignette"></div>
-
-    <div id="loader">
-        <div class="loader-content">
-            <div class="glitch-text">NEEL TARAS GROUP...</div>
-            <div class="bar-container"><div class="bar-fill"></div></div>
-        </div>
-    </div>
-
-    <div id="world">
-        
-        <nav class="hud-nav">
-            <div class="brand">NEEL TARAS <span class="highlight">GROUP</span></div>
-            <ul id="nav-links">
-                <li onclick="scrollToSection('hero')">Home</li>
-                <li onclick="scrollToSection('about')">Skill Sets</li>
-                <li onclick="scrollToSection('contact')">Contact</li>
-            </ul>
-        </nav>
-
-        <section id="hero" class="active-section">
-            
-            <div class="celestial-body moon"></div>
-
-            <div class="celestial-body sun"></div>
-
-            <div class="launch-pad-container">
+    <header id="header" class="sticky-top shadow-sm">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container-fluid px-4">
                 
-                <div class="missile-assembly">
-                    <div class="warhead"></div>
-                    
-                    <div class="missile-body">
-                        <div class="missile-text">UNDER CONSTRUCTION</div>
-                        <div class="panel-lines"></div>
-                    </div>
-                    
-                    <div class="fin left-fin"></div>
-                    <div class="fin right-fin"></div>
-                    <div class="thruster-nozzle"></div>
-                    
-                    <div class="fire-exhaust">
-                        <div class="flame red"></div>
-                        <div class="flame orange"></div>
-                        <div class="flame yellow"></div>
-                        <div class="smoke"></div>
-                    </div>
+                <!-- Brand Title & Logo -->
+                <a class="navbar-brand d-flex align-items-center me-auto" href="#">
+                    <h1 class="h4 mb-0 fw-bold">
+                        Neel<span class="star-icon">✫</span>Taras 
+                        <img src="/software.png" alt="NTDG Logo" class="brand-img mx-1"> 
+                        Development Group
+                    </h1>
+                </a>
+
+                <!-- Mobile Responsive Toggle Button -->
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                    <ul id="navLi" class="navbar-nav align-items-lg-center gap-2 mt-3 mt-lg-0">
+                        <li class="nav-item"><a class="nav-link px-3" href="#offers">Offers</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#price-chart">Price Chart</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#customer-care">Customer Care</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="#book-appointment">Book Appointment</a></li>
+                        <li class="nav-item"><a class="nav-link px-3 btn btn-outline-primary text-white ms-lg-2" href="#profile">Profile</a></li>
+                    </ul>
                 </div>
 
-                <div class="launch-status">
-                    <div class="simple-countdown">
-                        <div class="timer-flex">
-                            <div class="time-box"><span id="cd-days">00</span><label>D</label></div>
-                            <div class="sep">:</div>
-                            <div class="time-box"><span id="cd-hours">00</span><label>H</label></div>
-                            <div class="sep">:</div>
-                            <div class="time-box"><span id="cd-minutes">00</span><label>M</label></div>
-                            <div class="sep">:</div>
-                            <div class="time-box"><span id="cd-seconds">00</span><label>S</label></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Sections (Linked with Nav Bar) -->
+    <main>
+        <!-- Offers Section -->
+        <section id="offers" class="py-5 bg-light text-center">
+            <div class="container py-4">
+                <span class="badge bg-primary px-3 py-2 mb-3">Special Offers</span>
+                <h2 class="fw-bold display-6">Innovative Digital Solutions</h2>
+                <p class="text-secondary mx-auto mt-2" style="max-width: 650px;">
+                    Tailored software architecture, automation scripts, and high-performance development services.
+                </p>
+            </div>
+        </section>
+
+        <!-- Price Chart Section -->
+        <section id="price-chart" class="py-5">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Price Chart</h2>
+                    <p class="text-muted">Flexible pricing built around your requirements</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-5 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <h3 class="h5 fw-bold">Standard</h3>
+                            <p class="text-muted small">Scripts & Automation</p>
+                            <div class="my-3"><span class="fs-3 fw-bold">Custom</span></div>
+                            <a href="#book-appointment" class="btn btn-outline-primary w-100 mt-auto">Inquire Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="card h-100 border-primary shadow text-center p-4">
+                            <h3 class="h5 fw-bold text-primary">Enterprise</h3>
+                            <p class="text-muted small">Full Web & System Build</p>
+                            <div class="my-3"><span class="fs-3 fw-bold">Custom</span></div>
+                            <a href="#book-appointment" class="btn btn-primary w-100 mt-auto">Inquire Now</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section id="about">
-            <div class="glass-panel">
-                <div class="panel-header"><h3>SKILLS</h3></div>
-                <div class="panel-body">
-                    
-                    <div class="skill-grid"></div>
+        <!-- Customer Care Section -->
+        <section id="customer-care" class="py-5 bg-light">
+            <div class="container text-center py-4">
+                <h2 class="fw-bold mb-3">Customer Care</h2>
+                <p class="text-muted mb-4">Need technical assistance or project guidance?</p>
+                <a href="mailto:support@ntdg.com" class="btn btn-dark px-4 py-2">Get Support</a>
+            </div>
+        </section>
+
+        <!-- Book Appointment Section -->
+        <section id="book-appointment" class="py-5">
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="card border-0 shadow-sm p-4">
+                            <h2 class="fw-bold text-center mb-4">Book Appointment</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label class="form-label font-weight-bold">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="name@example.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Requirement Details</label>
+                                    <textarea class="form-control" rows="4" placeholder="Describe your project..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Schedule Consultation</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        
-
-        <section id="contact">
-            <div class="uplink-terminal">
-                <div class="screen-header">Get in touch</div>
-                <form onsubmit="event.preventDefault(); sendData();">
-                    <input type="text" placeholder="NAME" required>
-                    <input type="email" placeholder="YOUR EMAIL" required>
-                    <textarea placeholder="CONCERN" required></textarea>
-                    <button onclick="alert('Thanks')" class="cy-btn">Submit</button>
-                </form>
+        <!-- Profile Section -->
+        <section id="profile" class="py-5 bg-dark text-white text-center">
+            <div class="container py-4">
+                <h2 class="fw-bold mb-3">Neel★Taras Development Group</h2>
+                <div class="notice-banner">
+                    <span class="notice-badge">📢 ANNOUNCEMENT</span>
+                <p class="notice-text">
+                    <strong>!This website is currently under construction.....</strong>
+                    <br>Expected launch time of actual website by: <strong>15 August 2026 6:00  AM</strong>,
+                    <br>
+        thank you - <strong>NTDG</strong>
+    </p>
+</div>
             </div>
         </section>
+    </main>
 
-    </div>
-
-    <footer class="hud-footer">
-        <div class="footer-content">
-            <span class="copyright">&copy; 2026 NEEL TARAS GROUP</span>
-            <span class="separator">|</span>
-            <a href="mailto:admin@neeltarasgroup.online" class="email-link">ADMIN@NEELTARASGROUP.ONLINE</a>
-        </div>
+    <footer class="bg-black text-white-50 text-center py-3 border-top border-secondary">
+        <small>&copy; 2026 Neel★Taras Development Group. All rights reserved.</small>
     </footer>
-    <script type="text/javascript"> aclib.runAutoTag({ zoneId: 'ngxmmgmsql',}); </script>
 
-
-    <script src="script.js"></script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
